@@ -1,0 +1,249 @@
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    color: var(--colorLight2);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(9, 34, 121, 1) 94%, rgba(9, 34, 121, 1) 100%);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.tab-container p {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 4rem;
+}
+
+.grant-location-container .btn {
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.subcontainer {
+    display: flex;
+    max-width: 550px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grant-location-container {
+    display: none;
+}
+
+.grant-location-container.active {
+    display: flex;
+}
+
+.grant-location-container img {
+    margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.grant-location-container p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+}
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+.loading-container p {
+    text-transform: uppercase;
+}
+
+.user-info-container {
+    display: none;
+}
+
+.user-info-container.active {
+    display: flex;
+}
+
+.user-info-container p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.user-info-container img {
+    width: 90px;
+    height: 90px;
+}
+
+.user-info-container p[data-temperature] {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.name img {
+    width: 30px;
+    height: 30px;
+}
+
+.parameter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px 20px;
+    margin-top: 2rem;
+}
+
+.card-parameter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 200px;
+    gap: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 1rem;
+}
+
+.card-parameter img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-parameter p:first-of-type {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-parameter p:last-of-type {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.75px;
+}
+
+.form-container {
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active {
+    display: flex;
+}
+
+.form-container input {
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: rgba(219, 226, 239, 0.5);
+}
+
+.form-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container button {
+    all: unset;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorDark2);
+}
+
+.error-container{
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.error-container.active {
+    display: flex;
+}
+
+.tab.current-tab {
+    border-radius: 4px;
+    background-color: rgba(219, 226, 2139, 0.5);
+}

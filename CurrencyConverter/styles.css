@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1.25rem;
+}
+
+input {
+    padding: 0.625rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.amount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
+select {
+    padding: 0.625rem;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+form {
+    border: 1px solid #007bff;
+    padding: 2rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.addi-info {
+    font-size: 1rem;
+    width: 85%;
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+#exchange-rate,
+#converted-amount {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#submit-btn {
+    padding: 0.625rem 1.25rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 1.15rem;
+}
+
+.addi-info p {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 2.5rem;
+}
+
+.from-text, .to-text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
